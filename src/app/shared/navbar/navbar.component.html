@@ -1,0 +1,8 @@
+<nav>
+  <div class="container d-flex justify-content-between bg-secondary p-3 text-white">
+    <h3 class="nav-brand">Task Manager</h3>
+      @if (loginService.isLoggedIn()) {
+          <a class="btn btn-primary" (click)="loginService.logout()">logout</a>
+      }
+  </div>
+</nav>

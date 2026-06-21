@@ -1,0 +1,50 @@
+<form [formGroup]="form" class="d-flex flex-column gap-3">
+
+  <input
+    pInputText
+    placeholder="Title"
+    formControlName="title">
+
+  <textarea
+    pInputTextarea
+    rows="4"
+    placeholder="Description"
+    formControlName="description">
+  </textarea>
+
+  <input
+    pInputText
+    type="date"
+    formControlName="dueDate">
+
+  <p-select
+    formControlName="priority"
+     appendTo="body"
+    [options]="[
+      { label: 'Low', value: 'low' },
+      { label: 'Medium', value: 'medium' },
+      { label: 'High', value: 'high' }
+    ]"
+    optionLabel="label"
+    optionValue="value">
+  </p-select>
+
+  <div class="flex justify-content-end gap-2">
+    <button
+      pButton
+      type="button"
+      severity="secondary"
+      label="Cancel"
+      (click)="close.emit()">
+    </button>
+
+    <button
+      pButton
+      type="button"
+      label="Save"
+      (click)="save()">
+    </button>
+
+  </div>
+
+</form>
