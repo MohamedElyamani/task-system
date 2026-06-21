@@ -2,30 +2,6 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
 
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
 ## Building
 
 To build the project run:
@@ -33,27 +9,32 @@ To build the project run:
 ```bash
 ng build
 ```
+## Development server
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+To start a local development server, run:
 
 ```bash
-ng test
+ng serve
 ```
+## Login
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+To login to dashboard, use:
 
 ```bash
-ng e2e
+admin@gmail.com
+123
 ```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Project Overview
+```bash
+This project is a simple Task Management System built to help users efficiently organize and track their daily tasks. It provides a clean and responsive interface with full CRUD functionality and basic authentication.
+```
+## Core Features
+```bash
+Authentication: Secure login and logout functionality.
+Dashboard: Displays key insights such as total tasks, completed tasks, and pending tasks.
+Task Management: Full control over tasks including create, edit, delete, mark as completed, and view details.
+Task Information: Each task includes title, description, status, creation date, due date, and priority level.
+Search & Filtering: Ability to search tasks by title and filter by status or priority, with sorting by date.
+User Experience: Includes loading indicators, error handling, empty states, and responsive design for all devices.
+Data Source: Flexible data management approach using any suitable storage or API.
+```
