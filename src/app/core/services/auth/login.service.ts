@@ -19,8 +19,8 @@ isLoggedIn = signal<boolean>(false);
   login(user: IUser): boolean {
     if (user.email === 'admin@gmail.com' && user.password === '123') {
  
-        const dummyToken = 'dummy-token-123';
-        localStorage.setItem(this.TOKEN_KEY, dummyToken);
+      const dummyToken = 'dummy-token-123';
+      localStorage.setItem(this.TOKEN_KEY, dummyToken);
   
       this.isLoggedIn.set(true);
       return true;

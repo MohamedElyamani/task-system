@@ -8,7 +8,6 @@ import { authGuard } from './core/gurds/auth-guard';
 export const routes: Routes = [
 {
     path: '',
-    
     component: MainLayoutComponent,
     canActivate: [authGuard],
     children: [

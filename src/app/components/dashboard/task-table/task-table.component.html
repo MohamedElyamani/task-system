@@ -36,6 +36,7 @@
 
     <th>Status</th>
     <th>Priority</th>
+    <th>Description</th>
     <th pSortableColumn="dueDate">
       Due Date
       <p-sortIcon field="dueDate" />
@@ -63,6 +64,7 @@
       <p-tag [value]="task.priority"></p-tag>
     </td>
 
+    <td>{{ task.description}}</td>
     <td>{{ task.dueDate | date }}</td>
 
     <td class="flex gap-2">
